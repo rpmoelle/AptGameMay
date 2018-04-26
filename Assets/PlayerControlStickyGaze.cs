@@ -31,7 +31,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
     //boolean
     bool errorMsg = false;
-    int errorTimer = 0;
+    public int errorTimer = 0;
     public Text errorLabel;
     public Image errorBG;
 
@@ -109,13 +109,16 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         if (errorMsg)
         {
             Debug.Log("I SHOULD BE SHOWING");
+            errorLabel.enabled = true;
+            errorLabel.text = "404: At least one combination adjective not found";
             errorTimer++;
-            if (errorTimer > 90f)
+            if (errorTimer > 60f)
             {
                 errorTimer = 0;
                 errorMsg = false;
                 errorLabel.text = "";
                 errorBG.enabled = false;
+                Debug.Log("DONE");
             }
         }
 

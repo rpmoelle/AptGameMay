@@ -781,6 +781,7 @@ MonoBehaviour:
   presentGet2: {fileID: 0}
   presentGet3: {fileID: 0}
   presentGet4: {fileID: 0}
+  errorTimer: 0
   errorLabel: {fileID: 0}
   errorBG: {fileID: 0}
   comboSuccess: {fileID: 0}
@@ -3248,6 +3249,7 @@ MonoBehaviour:
   presentGet2: {fileID: 0}
   presentGet3: {fileID: 0}
   presentGet4: {fileID: 0}
+  errorTimer: 0
   errorLabel: {fileID: 0}
   errorBG: {fileID: 0}
   comboSuccess: {fileID: 0}
@@ -12090,8 +12092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 51.100006}
-  m_SizeDelta: {x: 3365.17, y: 759}
+  m_AnchoredPosition: {x: -0.0015321, y: 85.6}
+  m_SizeDelta: {x: 2193.1, y: 759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &404637362
 MonoBehaviour:
@@ -12125,7 +12127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Cute Puppy
+  m_Text: '404: Combination Data Not Found
 
 '
 --- !u!222 &404637363
@@ -21454,6 +21456,7 @@ MonoBehaviour:
   presentGet2: {fileID: 286999915}
   presentGet3: {fileID: 2133392667}
   presentGet4: {fileID: 925289184}
+  errorTimer: 0
   errorLabel: {fileID: 404637362}
   errorBG: {fileID: 2000759166}
   comboSuccess: {fileID: 8300000, guid: f5127888572df39459032223a5f4956b, type: 3}
@@ -51290,6 +51293,25 @@ Prefab:
     - target: {fileID: 224967279649545994, guid: 3c061e10e00a37c428533da547cb6a55,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138262077731126, guid: 3c061e10e00a37c428533da547cb6a55, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114289717702108262, guid: 3c061e10e00a37c428533da547cb6a55,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114405706292207420, guid: 3c061e10e00a37c428533da547cb6a55,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114297458193854794, guid: 3c061e10e00a37c428533da547cb6a55,
+        type: 2}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

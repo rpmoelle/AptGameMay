@@ -47,6 +47,7 @@ TagManager:
   - Robotic
   - Painful
   - witchy
+  - ignore
   layers:
   - Default
   - TransparentFX

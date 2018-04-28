@@ -529,6 +529,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                            // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             //errorBG.enabled = true;
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             Debug.Log(objectInfo.tag);
@@ -539,7 +541,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                            //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;
@@ -598,6 +600,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             //errorBG.enabled = true;
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -606,7 +610,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                            //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;
@@ -663,6 +667,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                         else {
                             //errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -671,7 +677,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                            //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;
@@ -729,6 +735,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                         {
                             // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             puzzle1Timer = 0;
@@ -738,7 +746,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                            //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;
@@ -800,6 +808,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                         {
                             // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -808,7 +818,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                           // this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;
@@ -866,6 +876,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                         {
                             //errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
                             errorMsg = true;
+                            //play the sound
+                            errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -874,7 +886,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                                 objectInfo.label += " (" + objectInfo.tag + ")";
                                 secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
                             }
-                            this.gameObject.GetComponent<AudioSource>().Play();
+                            //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
                         break;

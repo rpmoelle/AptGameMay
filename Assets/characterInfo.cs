@@ -8,6 +8,12 @@ public class characterInfo : MonoBehaviour
     public bool isSally;
     AudioSource audio;
 
+    public ParticleSystem ps1;
+    public ParticleSystem ps2;
+    public ParticleSystem ps3;
+    bool playing = false;
+    int timer = 0;
+
     private void OnCollisionEnter(Collision collision)
     {
         //get the task requester:
@@ -86,7 +92,12 @@ public class characterInfo : MonoBehaviour
                 {
                     playerScript.gameObject.GetComponent<AudioSource>().Play();
                 }
-
+                Debug.Log("WRONG PERSON");
+                //play the particle systems
+                ps1.Play();
+                ps2.Play();
+                ps3.Play();
+                playing = true;
             }
 
 
@@ -98,6 +109,16 @@ public class characterInfo : MonoBehaviour
             {
                 playerScript.gameObject.GetComponent<AudioSource>().Play();
             }
+            if(collision.gameObject.tag != "ignore")
+            {
+                Debug.Log("WRONG PERSON" + collision.gameObject.name);
+                //play the particle systems
+                ps1.Play();
+                ps2.Play();
+                ps3.Play();
+                playing = true;
+            }
+            
 
         }
     }
@@ -112,6 +133,18 @@ public class characterInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(playing && timer < 30)
+        {
+            timer++;
 
+        }
+        else
+        {
+            ps1.Stop();
+            ps2.Stop();
+            ps3.Stop();
+            playing = false;
+            timer = 0;
+        }
     }
 }

@@ -613,6 +613,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             temp.name = "GlowingScythe";
                             temp.GetComponent<myInfo>().sallyObject = true;
 
+                            //sound
+                            testAudio1.clip = comboSuccess;
+                            testAudio1.Play();
+
                             //particles
                             presentGet.transform.position = temp.transform.position;
                             //presentGet.transform.parent = this.gameObject.transform;
@@ -682,6 +686,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             temp.name = "SpicyPoops";
                             temp.GetComponent<myInfo>().sallyObject = true;
 
+                            //sound
+                            testAudio1.clip = comboSuccess;
+                            testAudio1.Play();
+
                             //particles
                             presentGet.transform.position = temp.transform.position;
                             //presentGet.transform.parent = this.gameObject.transform;
@@ -747,6 +755,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             temp.GetComponent<myInfo>().label = "Margarita";
                             temp.name = "Margarita";
                             temp.GetComponent<myInfo>().sallyObject = true;
+
+                            //sound
+                            testAudio1.clip = comboSuccess;
+                            testAudio1.Play();
 
 
                             //particles
@@ -814,6 +826,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //Remove old objects for new one
                             Vector3 pos = MyObjects[0].transform.position;
                             GameObject temp = Instantiate(puzzle5_result, transform.position + (transform.forward * 1.5f), transform.rotation);    //move this to infront of camera
+
+                            //sound
+                            testAudio1.clip = comboSuccess;
+                            testAudio1.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -889,6 +905,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             temp.GetComponent<myInfo>().label = "Boogie RX";
                             temp.name = "DiscoPills";
                             temp.GetComponent<myInfo>().sallyObject = true;
+
+                            //sound
+                            testAudio1.clip = comboSuccess;
+                            testAudio1.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;

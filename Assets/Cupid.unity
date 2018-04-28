@@ -8345,10 +8345,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &390947985
 BoxCollider:
@@ -21737,6 +21737,21 @@ MonoBehaviour:
   presentParti: {fileID: 0}
   partiStart: 0
   binaryParti: 0
+--- !u!54 &579139008
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579139005}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &589508890
 GameObject:
   m_ObjectHideFlags: 0
@@ -22613,10 +22628,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &632558193
 BoxCollider:
@@ -29129,6 +29144,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1120177737350604, guid: bd3738e147f7b104fb5ba63411690b4d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd3738e147f7b104fb5ba63411690b4d, type: 2}
   m_IsPrefabParent: 0
@@ -29410,10 +29429,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!65 &851342884
 BoxCollider:
@@ -46637,10 +46656,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!1 &1311480667 stripped
 GameObject:
@@ -54515,7 +54534,7 @@ BoxCollider:
   m_GameObject: {fileID: 1581153451}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.1031131, y: 3.0421317, z: 1.0313525}
   m_Center: {x: -0.0010879803, y: 1.5210658, z: -0.5083151}
@@ -66094,8 +66113,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.5154486}
-  m_Center: {x: 24.35528, y: -0.004920721, z: -1.293076}
+  m_Size: {x: 0.24200821, y: 3.0827937, z: 0.8127136}
+  m_Center: {x: 24.35528, y: -0.004920721, z: -1.6444435}
 --- !u!65 &1925773207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66106,8 +66125,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.4492526}
-  m_Center: {x: 24.35528, y: -0.004920721, z: 1.321645}
+  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.0535359}
+  m_Center: {x: 24.35528, y: -0.004920721, z: 1.5195034}
 --- !u!65 &1925773208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75202,10 +75221,10 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &2052026947
 MonoBehaviour:

@@ -41,13 +41,13 @@ public class liftScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("MOVE ME" + moveMeUp + " " + pb.transform.position.y);
+        /*Debug.Log("MOVE ME" + moveMeUp + " " + pb.transform.position.y);
 		if(moveMeUp && this.gameObject.transform.position.y < 1.519f)
         {
             Debug.Log("I SHOULD BE MOVING UP");
             transform.position = new Vector3(this.gameObject.transform.position.x, this.gameObject.transform.position.y + .1f, this.gameObject.transform.position.z);
             pb.transform.position = new Vector3(pb.transform.position.x, pb.transform.position.y + .1f, pb.transform.position.z);
-        }
+        }*/
        /* else if (moveMeUp)
         {
             //moveMeUp = false;

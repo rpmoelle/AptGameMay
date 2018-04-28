@@ -35,6 +35,7 @@ public class characterInfo : MonoBehaviour
                     // Destroy(playerScript.door1);
                     playerScript.door1.transform.position = new Vector3(playerScript.door1OpenPosition.x, playerScript.door1OpenPosition.y, playerScript.door1OpenPosition.z);
                     playerScript.door1.transform.eulerAngles = playerScript.door1OpenRotation;
+                    playerScript.door1.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
                 }
                 if (collision.gameObject.name == "SpicyPoops")
@@ -43,6 +44,7 @@ public class characterInfo : MonoBehaviour
                     // Destroy(playerScript.door1);
                    // playerScript.door2.transform.position = new Vector3(playerScript.door2OpenPosition.x, playerScript.door2OpenPosition.y, playerScript.door2OpenPosition.z);
                     playerScript.door2.transform.eulerAngles = playerScript.door2OpenRotation;
+                    playerScript.door2.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
                 }
                 if (collision.gameObject.name == "Popcorn")
@@ -51,6 +53,7 @@ public class characterInfo : MonoBehaviour
                     // Destroy(playerScript.door1);
                     playerScript.door3.transform.position = new Vector3(playerScript.door3OpenPosition.x, playerScript.door3OpenPosition.y, playerScript.door3OpenPosition.z);
                     playerScript.door3.transform.eulerAngles = playerScript.door3OpenRotation;
+                    playerScript.door3.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
                 }
             }

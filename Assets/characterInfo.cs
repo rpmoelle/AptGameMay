@@ -37,6 +37,7 @@ public class characterInfo : MonoBehaviour
                     playerScript.door1.transform.eulerAngles = playerScript.door1OpenRotation;
                     playerScript.door1.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
+                    playerScript.doorSound.Play();
                 }
                 if (collision.gameObject.name == "SpicyPoops")
                 {
@@ -46,6 +47,7 @@ public class characterInfo : MonoBehaviour
                     playerScript.door2.transform.eulerAngles = playerScript.door2OpenRotation;
                     playerScript.door2.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
+                    playerScript.doorSound.Play();
                 }
                 if (collision.gameObject.name == "Popcorn")
                 {
@@ -55,6 +57,7 @@ public class characterInfo : MonoBehaviour
                     playerScript.door3.transform.eulerAngles = playerScript.door3OpenRotation;
                     playerScript.door3.GetComponent<BoxCollider>().enabled = false;
                     playerScript.doorAnim.SetTrigger("opened");
+                    playerScript.doorSound.Play();
                 }
             }
             if (!playerScript.gameObject.GetComponent<AudioSource>().isPlaying)

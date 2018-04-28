@@ -45,6 +45,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
     //door icon
     public Animator doorAnim;
+    public AudioSource doorSound;
 
     //audio
     public AudioClip comboSuccess;

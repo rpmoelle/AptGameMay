@@ -50,6 +50,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     //audio
     public AudioClip comboSuccess;
     public AudioClip errorSound;
+    public AudioSource accelerator;
+    bool acc = false;
 
     List<GameObject> MyObjects = new List<GameObject>();
     myInfo objectInfo; //info on the object from MyObjects[0]
@@ -358,6 +360,17 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         {
             this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+            accelerator.Stop();
+            acc = false;
+        }
+        else
+        {
+            if (!accelerator.isPlaying && !acc)
+            {
+                accelerator.Play();
+                acc = true;
+            }
+
         }
 
     }

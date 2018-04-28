@@ -35,6 +35,9 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     public Text errorLabel;
     public Image errorBG;
 
+    //door icon
+    public Animator doorAnim;
+
     //audio
     public AudioClip comboSuccess;
     public AudioClip errorSound;
@@ -728,7 +731,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                     }
                 case 5:
                     {
-                        Debug.Log("ENTERING CASE 2");
+                        
                         //find tasty and explosive
                         if (checkMatchingTags("tasty", "explosive"))
                         {

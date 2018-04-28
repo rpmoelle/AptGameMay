@@ -337,12 +337,24 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         this.gameObject.transform.position = new Vector3(gameObject.transform.position.x, 0.93f, gameObject.transform.position.z);
 
         player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x, player.transform.localEulerAngles.y + Input.GetAxis("Mouse X") * 2f, player.transform.localEulerAngles.z);
-        player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x + Input.GetAxis("Mouse Y") * -2f, player.transform.localEulerAngles.y, player.transform.localEulerAngles.z);
+        float tempY = Input.GetAxis("Mouse Y") * -2f;
+        if(tempY < -160f)
+        {
+            //dont allow them to look any further up
+            tempY = -160f;
+        }
+        if (tempY > 160f)
+        {
+            //dont allow them to look any further down
+            tempY = 160f;
+        }
+        player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x + tempY, player.transform.localEulerAngles.y, player.transform.localEulerAngles.z);
+        // player.transform.localEulerAngles = new Vector3(player.transform.localEulerAngles.x + Input.GetAxis("Mouse Y") * -2f, player.transform.localEulerAngles.y, player.transform.localEulerAngles.z);
 
         //cam.transform.localEulerAngles = new Vector3(cam.transform.localEulerAngles.x, cam.transform.localEulerAngles.y + Input.GetAxis("Mouse X") * 2f, cam.transform.localEulerAngles.z);
         //cam.transform.localEulerAngles = new Vector3(cam.transform.localEulerAngles.x + Input.GetAxis("Mouse Y") * -2f, cam.transform.localEulerAngles.y, cam.transform.localEulerAngles.z);
         //cancel all forces acting on the player if they are not pressing a button
-        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+        if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
         {
             this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
             this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;

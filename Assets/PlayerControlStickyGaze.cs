@@ -120,6 +120,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         if (errorMsg)
         {
             Debug.Log("I SHOULD BE SHOWING");
+            errorBG.enabled = true;
             errorLabel.enabled = true;
             errorLabel.text = "404: At least one combination adjective not found";
             errorTimer++;
@@ -521,13 +522,11 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             //Debug.Log(MyObjects.Count);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                        
                         else {
                             Debug.Log("ERROR");
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                           // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            //errorBG.enabled = true;
                             errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
@@ -592,13 +591,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             TextMeshProUGUI tmpro = temp.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>();//sorry this is because it defaults the text like three children down :(
                             tmpro.SetText(temp.name);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                       
                         else
                         {
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                            // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            //errorBG.enabled = true;
+                            errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -660,12 +658,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             TextMeshProUGUI tmpro = temp.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>();//sorry this is because it defaults the text like three children down :(
                             tmpro.SetText(temp.name);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                       
                         else {
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                            //errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -727,13 +723,11 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             TextMeshProUGUI tmpro = temp.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>();//sorry this is because it defaults the text like three children down :(
                             tmpro.SetText(temp.name);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                       
                         else
                         {
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                            // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             puzzle1Timer = 0;
@@ -800,13 +794,11 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             TextMeshProUGUI tmpro = temp.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>();//sorry this is because it defaults the text like three children down :(
                             tmpro.SetText(temp.name);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                        
                         else
                         {
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                            // errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {
@@ -868,13 +860,11 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             TextMeshProUGUI tmpro = temp.transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>();//sorry this is because it defaults the text like three children down :(
                             tmpro.SetText(temp.name);
                         }
-                        else if (objectInfo.tag == secondObjectInfo.tag) {
-                            Debug.Log("NICE TRY FINDING OUT THE TAGS THE EASY WAY N00B");
-                        }
+                        
                         else
                         {
-                            errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
-                            errorBG.enabled = true;
+                            //errorLabel.text = "ERROR: 404 REQUESTED FEATURES NOT FOUND";
+                            errorMsg = true;
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             if (objectInfo.wrongCombine == false) {

@@ -41012,7 +41012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1855830760040530, guid: 7459ff9269b641740ad9f93b53330f52, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7459ff9269b641740ad9f93b53330f52, type: 2}
@@ -54534,7 +54534,7 @@ BoxCollider:
   m_GameObject: {fileID: 1581153451}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1031131, y: 3.0421317, z: 1.0313525}
   m_Center: {x: -0.0010879803, y: 1.5210658, z: -0.5083151}
@@ -56088,7 +56088,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: f173c78bfe3b0964095fde4983cd1b62, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.74
+      value: -26.61
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f173c78bfe3b0964095fde4983cd1b62, type: 3}
       propertyPath: m_LocalPosition.y
@@ -66113,8 +66113,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24200821, y: 3.0827937, z: 0.8127136}
-  m_Center: {x: 24.35528, y: -0.004920721, z: -1.6444435}
+  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.5116863}
+  m_Center: {x: 24.35528, y: -0.004920721, z: -1.2949572}
 --- !u!65 &1925773207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66125,8 +66125,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.0535359}
-  m_Center: {x: 24.35528, y: -0.004920721, z: 1.5195034}
+  m_Size: {x: 0.24200821, y: 3.0827937, z: 1.3927555}
+  m_Center: {x: 24.35528, y: -0.004920721, z: 1.3498936}
 --- !u!65 &1925773208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79795,8 +79795,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 26.425827, y: 0.34143096, z: 18.342617}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 26.425827, y: 0.25496322, z: 18.342617}
+  m_Center: {x: 0, y: -0.04323387, z: 0}
 --- !u!1001 &2145007406
 Prefab:
   m_ObjectHideFlags: 0

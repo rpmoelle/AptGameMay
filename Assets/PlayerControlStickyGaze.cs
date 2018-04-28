@@ -29,6 +29,11 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     public ParticleSystem presentGet3;
     public ParticleSystem presentGet4;
 
+    //new request feedback
+    public GameObject newReq;
+    int feedTimer;
+    bool playingNewReq = false;
+
     //result objects
     public GameObject puzzle1_result;
     public GameObject puzzle2_result;
@@ -119,6 +124,18 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
         //Analytics
         puzzle1Timer++;
+
+        if(playingNewReq && feedTimer < 90)
+        {
+            //waiting until new request feedback has been seen before killing partle fx
+            feedTimer++;
+        }
+        else
+        {
+            feedTimer = 0;
+            playingNewReq = false;
+            newReq.GetComponent<ParticleSystem>().Stop();
+        }
 
         if (errorMsg)
         {
@@ -213,6 +230,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                     break;
                 }
         }
+        //play sound and pfx
+        newReq.GetComponent<Animator>().SetTrigger("newReq");
+        newReq.GetComponent<ParticleSystem>().Play();
+        newReq.GetComponent<AudioSource>().Play();
+        playingNewReq = true;
+
     }
 
     string getTaskText() {
@@ -220,7 +243,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         {
             case 1:
                 {
-                    return "REQUEST: My honey, the executive, is coming over. Bring me something DIRTY to get me in the mood, but also CLEAN to keep it classy.";
+                    return "REQUEST: Hello, OTTO, are you on? My honey, the executive, is coming over. Bring me something DIRTY to get me in the mood, but also CLEAN to keep it classy.";
                     break;
                 }
             case 2:
@@ -230,13 +253,13 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 }
             case 3:
                 {
-                    return "REQUEST:  My novel is so cliche! Bring me some HOT and RISKY inspiration!";
+                    return "REQUEST:  Oh OTTO you’re so lucky that you don’t have to deal with the struggles of being a true artist. I need inspiration! Bring me something HOT to fuel my artistic flame and something... RISKY! I want to feel that rush.";
                     break;
                 }
             case 4:
                 {
                     
-                    return "REQUEST: My pH is off balance. Bring me something BASIC and ACIDIC to balance it out.";
+                    return "REQUEST: Umm OTTO my pH is off balance… any chance you could bring me something ACIDIC and BASIC to balance it out? I’d really appreciate it.";
                     break;
                 }
             case 5:
@@ -247,7 +270,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 }
             case 6:
                 {
-                    return "REQUEST: I’m dying of disco fever! Make me something FUNKY and MEDICINAL to cure me!";
+                    return "REQUEST: OTTO, I feel like I danced myself to death last night! I’m trying not to panic but there’s no way I can get down at the disco dying of disco fever! Please Doc Robot make me something MEDICINAL and FUNKY to help get me back on my platform wearin’ feet.";
                     break;
                 }
         }

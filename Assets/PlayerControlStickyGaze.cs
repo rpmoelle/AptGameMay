@@ -416,7 +416,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
                     hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-                    Debug.Log("HOLDING: parti turned off");
+                    //Debug.Log("HOLDING: parti turned off");
                     hit.collider.gameObject.GetComponent<myInfo>().binaryParti = false;    //turn off partis when you're holding the object
                     hit.collider.transform.parent = cam.transform;//was cam.transform
                     MyObjects.Add(hit.collider.gameObject);
@@ -465,7 +465,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
 
                         if (!hit.collider.gameObject.GetComponent<myInfo>().grabbed) {
-                            Debug.Log("turning on parti");
+                            //Debug.Log("turning on parti");
                             hit.collider.gameObject.GetComponent<myInfo>().binaryParti = true;
                         }
                         else {

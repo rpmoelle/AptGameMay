@@ -14,7 +14,7 @@ public class myInfo : MonoBehaviour {
     public string tagReveal;    //item description with type descriptor (e.g. "explosive sticks" and "tasty")
     public Vector3 startPos;
     public Quaternion startRot;
-    public ParticleSystem kakarot;  //the weakest of the saiyans
+    //public ParticleSystem kakarot;  //the weakest of the saiyans
     public ParticleSystem presentParti; //trigger the parti
     public bool partiStart; //camera you combined right parti
     public bool binaryParti;    //binary parti youre looking at an object parti
@@ -26,10 +26,10 @@ void Start() {
         wrongCombine = false;
         startPos = this.gameObject.transform.position;
         startRot = this.gameObject.transform.rotation;
-        if (kakarot != null) {
-            kakarot.transform.position = startPos;
-            //kakarot.Stop();
-        }
+        //if (kakarot != null) {
+        //    kakarot.transform.position = startPos;
+        //    //kakarot.Stop();
+        //}
         partiStart = false;
         binaryParti = false;
 
@@ -41,22 +41,22 @@ void Start() {
 
     // Update is called once per frame
     void Update() {
-        if (kakarot != null) {
-            if (binaryParti) {
-                kakarot.Play();
-            }
-            else {
-                kakarot.Stop();
-            }
-        }
+        //if (kakarot != null) {
+        //    if (binaryParti) {
+        //        kakarot.Play();
+        //    }
+        //    else {
+        //        kakarot.Stop();
+        //    }
+        //}
 
-        if (presentParti != null) {
-            kakarot.Stop();
-            if (partiStart == true) {
-                kakarot.Play();
-                //partiStart = false;
-            }
-        }
+        //if (presentParti != null) {
+        //    kakarot.Stop();
+        //    if (partiStart == true) {
+        //        kakarot.Play();
+        //        //partiStart = false;
+        //    }
+        //}
 
         if (grabbed) {
             //if grabbed, follow the mother ray

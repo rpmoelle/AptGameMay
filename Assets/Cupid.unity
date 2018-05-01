@@ -1296,7 +1296,7 @@ MonoBehaviour:
   label: Shots
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Shots (EXPERIMENTAL)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -1841,7 +1841,7 @@ MonoBehaviour:
   label: Harvestor
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Harvestor (EVIL)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -2888,6 +2888,11 @@ Prefab:
     - target: {fileID: 1051400981416584, guid: 67cfd1d75d95fa343875595597afdecc, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114422978148369786, guid: 67cfd1d75d95fa343875595597afdecc,
+        type: 2}
+      propertyPath: tagReveal
+      value: Inevitable Spicy Poops
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 67cfd1d75d95fa343875595597afdecc, type: 2}
@@ -4169,7 +4174,7 @@ MonoBehaviour:
   label: Squeaky Gloves
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Squeaky Gloves (clean)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -8762,7 +8767,7 @@ MonoBehaviour:
   label: ChopChop
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: ChopChop (COMFORTING)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -9034,7 +9039,7 @@ MonoBehaviour:
   label: Food Strip
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Food Strip (SHOCKING)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -9169,7 +9174,7 @@ MonoBehaviour:
   label: Corn
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Corn (TASTY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -9304,7 +9309,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -245057991
+  randomSeed: 363064695
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -20995,7 +21000,7 @@ MonoBehaviour:
   label: Fuggs
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Fuggs (BASIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -21404,7 +21409,7 @@ MonoBehaviour:
   label: Dead Serious
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Dead Serious (DRAMATIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -25277,7 +25282,7 @@ MonoBehaviour:
   label: Soiled Bag
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Soiled Bag (DIRTY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 568378750}
@@ -25468,7 +25473,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1293556639
+  randomSeed: -1810682507
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -29150,7 +29155,7 @@ MonoBehaviour:
   label: Sister
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Sister (ROBOTIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -29425,7 +29430,7 @@ MonoBehaviour:
   label: Stank Source
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Stank Source (FUNKY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -29715,7 +29720,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: e47bf04db89bd8e4aa8d124aeb701167, type: 3}
       propertyPath: m_TagString
-      value: Player
+      value: comforting
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e47bf04db89bd8e4aa8d124aeb701167, type: 3}
@@ -29865,7 +29870,7 @@ MonoBehaviour:
   label: Genie Bottle
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Genie Bottle (PSYCHEDELIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -30060,7 +30065,7 @@ MonoBehaviour:
   label: Engelbart
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Engelbart (INTELLIGENT)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -30264,7 +30269,7 @@ MonoBehaviour:
   label: Harvestor
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Harvestor (EVIL)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -30670,6 +30675,11 @@ Prefab:
     - target: {fileID: 1730417955386934, guid: 984a0861961305d4192aa5c55cdaae53, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114185615681627782, guid: 984a0861961305d4192aa5c55cdaae53,
+        type: 2}
+      propertyPath: tagReveal
+      value: Tidies
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 984a0861961305d4192aa5c55cdaae53, type: 2}
@@ -39254,7 +39264,7 @@ MonoBehaviour:
   label: Trident
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Trident (FESTIVE)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -39339,7 +39349,7 @@ MonoBehaviour:
   label: Fire Sauce
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Fire Sauce (HOT)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -39905,7 +39915,7 @@ MonoBehaviour:
   label: Pucker Berry
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Pucker Berry (ACIDIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -40116,7 +40126,7 @@ MonoBehaviour:
   label: Wall Wart
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Wall Wart (SHOCKING)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -40231,6 +40241,11 @@ Prefab:
     - target: {fileID: 1120177737350604, guid: bd3738e147f7b104fb5ba63411690b4d, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114504637070700358, guid: bd3738e147f7b104fb5ba63411690b4d,
+        type: 2}
+      propertyPath: tagReveal
+      value: Death by Neon
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bd3738e147f7b104fb5ba63411690b4d, type: 2}
@@ -44036,7 +44051,7 @@ MonoBehaviour:
   label: Bandaid Box
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Bandaid Box (MEDICINAL)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -44090,7 +44105,7 @@ MonoBehaviour:
   label: Oven
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Oven (BREAKFAST)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -44205,7 +44220,7 @@ MonoBehaviour:
   label: Afternoon Delight
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Afternoon Delight (EXPLOSIVE)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 0}
@@ -44326,7 +44341,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2039418683
+  randomSeed: -493791756
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -48196,7 +48211,7 @@ MonoBehaviour:
   label: Dirty Money
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Dirty Money (DIRTY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 0}
@@ -52171,7 +52186,7 @@ MonoBehaviour:
   label: Jill
   sallyObject: 1
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Jill
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 0}
@@ -53439,7 +53454,7 @@ MonoBehaviour:
   label: Vanilla Wax Puddle
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Vanilla Wax Puddle (BASIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -54399,7 +54414,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 577066418
+  randomSeed: 316304569
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -62274,7 +62289,7 @@ MonoBehaviour:
   label: Sally
   sallyObject: 1
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Sally
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 0}
@@ -62887,6 +62902,11 @@ Prefab:
     - target: {fileID: 1855830760040530, guid: 7459ff9269b641740ad9f93b53330f52, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114922343876522962, guid: 7459ff9269b641740ad9f93b53330f52,
+        type: 2}
+      propertyPath: tagReveal
+      value: Margarita
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7459ff9269b641740ad9f93b53330f52, type: 2}
@@ -63538,7 +63558,7 @@ MonoBehaviour:
   label: Bob
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Bob
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 0}
@@ -63759,7 +63779,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 415407788
+  randomSeed: 455438268
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -72047,6 +72067,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114344285627365144, guid: de4ac63a118430944a6ec11b53c29397,
+        type: 2}
+      propertyPath: tagReveal
+      value: Boogie RX
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de4ac63a118430944a6ec11b53c29397, type: 2}
   m_IsPrefabParent: 0
@@ -72070,7 +72095,7 @@ MonoBehaviour:
   label: Scoop
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Scoop (MUSICAL)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -72124,7 +72149,7 @@ MonoBehaviour:
   label: Brother
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Brother (ROBOTIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -73143,7 +73168,7 @@ MonoBehaviour:
   label: Paper
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Paper (PROFITABLE)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -73809,7 +73834,7 @@ MonoBehaviour:
   label: Bug Nest
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Bug Nest (RISKY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -74000,7 +74025,7 @@ MonoBehaviour:
   label: Powerade
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Powerade (WEAK)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -74274,7 +74299,7 @@ MonoBehaviour:
   label: Doggie Bowl
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Doggie Bowl (THIRST QUENCHING)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -74486,7 +74511,7 @@ MonoBehaviour:
   label: Angry Fruit
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Angry Fruit (HOT)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -75299,6 +75324,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114475738240443348, guid: 07c45fea230261042b0869270e295c7a,
+        type: 2}
+      propertyPath: tagReveal
+      value: Popcorn
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07c45fea230261042b0869270e295c7a, type: 2}
   m_IsPrefabParent: 0
@@ -75519,7 +75549,7 @@ MonoBehaviour:
   label: Stalks
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Stalks (TASTY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -75667,7 +75697,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2021153339
+  randomSeed: 602884756
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -82804,7 +82834,7 @@ MonoBehaviour:
   label: Stank Source
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Stank Source (FUNKY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -83707,7 +83737,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1274492869
+  randomSeed: 634076925
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -89698,7 +89728,7 @@ MonoBehaviour:
   label: Broom
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Broom (WITCHY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -89819,7 +89849,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1121949261
+  randomSeed: -1630192023
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -97589,7 +97619,7 @@ MonoBehaviour:
   label: Paper Weight
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Paper Weight (OPPRESSIVE)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 568378750}
@@ -98192,7 +98222,7 @@ MonoBehaviour:
   label: Bathtub
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Bathtub (FLUID)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 568378750}
@@ -102440,7 +102470,7 @@ MonoBehaviour:
   label: Week Old Noods
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Week Old Noods (RISKY)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -103780,7 +103810,7 @@ MonoBehaviour:
   label: Clucker
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Clucker (COMEDIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -103901,7 +103931,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -594104922
+  randomSeed: -1630428275
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -107279,7 +107309,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 524735193
+  randomSeed: 42377096
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -111435,7 +111465,7 @@ MonoBehaviour:
   label: Pucker Berry
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Pucker Berry (ACIDIC)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}
@@ -111818,7 +111848,7 @@ MonoBehaviour:
   label: Stabby
   sallyObject: 0
   wrongCombine: 0
-  tagReveal: 
+  tagReveal: Stabby (SHARP)
   startPos: {x: 0, y: 0, z: 0}
   startRot: {x: 0, y: 0, z: 0, w: 0}
   kakarot: {fileID: 198584988496597690, guid: ed2ab35eb5b5fc141b7cebd4cddcc49f, type: 2}

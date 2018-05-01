@@ -452,18 +452,18 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             lookedAtSomethingElse = true;
                         }
 
-                        //if (hit.collider.gameObject.GetComponent<myInfo>().wrongCombine) {
-                        //    WorldLabel.enabled = true;
-                        //}
-                        //else {
-                        //    WorldLabel.enabled = false;
-                        //}
+                        if (hit.collider.gameObject.GetComponent<myInfo>().wrongCombine == false) {
+                            WorldLabel.text = hit.collider.gameObject.GetComponent<myInfo>().label;
+                        }
+                        else {
+                            WorldLabel.text = hit.collider.gameObject.GetComponent<myInfo>().tagReveal;
+                        }
 
                         //put particles here
-                       
-                            WorldLabel.text = hit.collider.gameObject.GetComponent<myInfo>().label;
-                        
-                       
+
+                        //WorldLabel.text = hit.collider.gameObject.GetComponent<myInfo>().label;
+
+
                         if (!hit.collider.gameObject.GetComponent<myInfo>().grabbed) {
                             Debug.Log("turning on parti");
                             hit.collider.gameObject.GetComponent<myInfo>().binaryParti = true;
@@ -583,12 +583,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             numWrongCombos++;
                             Debug.Log(objectInfo.tag);
                             Debug.Log(secondObjectInfo.tag);
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                                //objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                             //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
@@ -656,12 +656,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                            //    objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                             //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
@@ -727,12 +727,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                            //    objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                             //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
@@ -800,12 +800,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
                             puzzle1Timer = 0;
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                            //    objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                             //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
@@ -876,12 +876,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                            //    objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                            // this.gameObject.GetComponent<AudioSource>().Play();
                         }
 
@@ -948,12 +948,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             errorBG.GetComponent<AudioSource>().Play();
                             Debug.Log("COMBO DIDN'T WORK");
                             numWrongCombos++;
-                            if (objectInfo.wrongCombine == false) {
+                            //if (objectInfo.wrongCombine == false) {
                                 objectInfo.wrongCombine = true;
                                 secondObjectInfo.wrongCombine = true;
-                                objectInfo.label += " (" + objectInfo.tag + ")";
-                                secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
-                            }
+                            //    objectInfo.label += " (" + objectInfo.tag + ")";
+                            //    secondObjectInfo.label += " (" + secondObjectInfo.tag + ")";
+                            //}
                             //this.gameObject.GetComponent<AudioSource>().Play();
                         }
 

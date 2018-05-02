@@ -66,10 +66,10 @@ public class characterInfo : MonoBehaviour
                     playerScript.doorSound.Play();
                 }
             }
-            if (!playerScript.gameObject.GetComponent<AudioSource>().isPlaying)
+           /* if (!playerScript.gameObject.GetComponent<AudioSource>().isPlaying)
             {
                 playerScript.gameObject.GetComponent<AudioSource>().Play();
-            }
+            }*/
 
 
 
@@ -105,20 +105,22 @@ public class characterInfo : MonoBehaviour
         }
         else
         {
-            if (!playerScript.gameObject.GetComponent<AudioSource>().isPlaying)
+            if (collision.gameObject.name != "Player Body" && collision.gameObject.name != "Main Camera")
             {
-                playerScript.gameObject.GetComponent<AudioSource>().Play();
+                if (!playerScript.gameObject.GetComponent<AudioSource>().isPlaying)
+                {
+                    playerScript.gameObject.GetComponent<AudioSource>().Play();
+                }
+                if (collision.gameObject.tag != "ignore")
+                {
+                    Debug.Log("WRONG PERSON" + collision.gameObject.name);
+                    //play the particle systems
+                    ps1.Play();
+                    ps2.Play();
+                    ps3.Play();
+                    playing = true;
+                }
             }
-            if(collision.gameObject.tag != "ignore")
-            {
-                Debug.Log("WRONG PERSON" + collision.gameObject.name);
-                //play the particle systems
-                ps1.Play();
-                ps2.Play();
-                ps3.Play();
-                playing = true;
-            }
-            
 
         }
     }

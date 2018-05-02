@@ -29,6 +29,9 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     public ParticleSystem presentGet3;
     public ParticleSystem presentGet4;
 
+    //working around the scale issues
+    Vector3 tempScale;
+
     //new request feedback
     public GameObject newReq;
     int feedTimer;
@@ -111,6 +114,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     }
 
     void Update() {
+        transform.localScale = transform.localScale;
         //Debug.Log("Current requestor: " + currentRequestor);
         //Debug.Log("my obj" + MyObjects.Count);
         Cursor.lockState = CursorLockMode.Locked;
@@ -406,6 +410,10 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         if (Physics.Raycast(ray, out hit, 3f)) {    //the 10f is the length the ray extends in distance 
             //A collision occured between the ray and a thing
             if (hit.collider != null && hit.collider != floor && hit.collider.gameObject != cam && Input.GetKeyDown(KeyCode.Mouse0)) {
+                this.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                this.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+                hit.collider.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+                hit.collider.gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
                 //pick it up
                 if (hit.collider.gameObject.tag == "person")
                 {
@@ -413,7 +421,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 }
                 else
                 {
-
+                    
+                    // Debug.Log(tempScale.x);
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
                     hit.collider.gameObject.GetComponent<Rigidbody>().isKinematic = true;
                     //Debug.Log("HOLDING: parti turned off");

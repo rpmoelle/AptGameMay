@@ -29,6 +29,14 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     public ParticleSystem presentGet3;
     public ParticleSystem presentGet4;
 
+    //success combo audios
+    public AudioClip combo1;
+    public AudioClip combo2;
+    public AudioClip combo3;
+    public AudioClip combo4;
+    public AudioClip combo5;
+    public AudioClip combo6;
+
     //working around the scale issues
     Vector3 tempScale;
 
@@ -548,7 +556,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
-                            //testAudio1.clip = errorSound; 
+                            testAudio2.clip = combo1;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -625,6 +634,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
+                            testAudio2.clip = combo2;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -698,6 +709,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
+                            testAudio2.clip = combo3;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -768,7 +781,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
-
+                            testAudio2.clip = combo4;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -839,6 +853,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
+                            testAudio2.clip = combo5;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;
@@ -918,6 +934,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                             //sound
                             testAudio1.clip = comboSuccess;
                             testAudio1.Play();
+                            testAudio2.clip = combo6;
+                            testAudio2.Play();
 
                             //particles
                             presentGet.transform.position = temp.transform.position;

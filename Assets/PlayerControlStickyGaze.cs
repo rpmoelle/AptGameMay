@@ -111,7 +111,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         //Analytics
         Tinylytics.AnalyticsManager.LogCustomMetric("New Session", "STARTED");
 
-        currentRequestor = "Sally";
+        currentRequestor = "Enbee";
 
         for (int i = 0; i < FindObjectsOfType<myInfo>().Length; i++) {  //populate the list of "MyInfo" scripts
             AllObjsWithInfo.Add(FindObjectsOfType<myInfo>()[i]);
@@ -201,42 +201,42 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         {
             case 1:
                 {
-                    currentRequestor = "Sally";
+                    currentRequestor = "Enbee";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 2:
                 {
-                    currentRequestor = "Bob";
+                    currentRequestor = "Dora";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 3:
                 {
-                    currentRequestor = "Jill";
+                    currentRequestor = "Teju";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 4:
                 {
-                    currentRequestor = "Sally";
+                    currentRequestor = "Enbee";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 5:
                 {
-                    currentRequestor = "Jill";
+                    currentRequestor = "Teju";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 6:
                 {
-                    currentRequestor = "Bob";
+                    currentRequestor = "Dora";
 
                     requestorText.text = currentRequestor.ToString();
                     break;

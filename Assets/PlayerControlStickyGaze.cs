@@ -229,14 +229,14 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 }
             case 5:
                 {
-                    currentRequestor = "Teju";
+                    currentRequestor = "Dora";
 
                     requestorText.text = currentRequestor.ToString();
                     break;
                 }
             case 6:
                 {
-                    currentRequestor = "Dora";
+                    currentRequestor = "Teju";
 
                     requestorText.text = currentRequestor.ToString();
                     break;

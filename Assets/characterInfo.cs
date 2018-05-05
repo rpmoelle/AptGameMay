@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class characterInfo : MonoBehaviour
 {
     public PlayerControlStickyGaze playerScript;
     public bool isSally;
     AudioSource audio;
+    bool win = false;
 
     public ParticleSystem ps1;
     public ParticleSystem ps2;
@@ -30,6 +32,13 @@ public class characterInfo : MonoBehaviour
                 audio.Play();
                 //destroy combo object and gain a point
                 //Destroy(collision.gameObject);
+
+                //if this is the final puzzle
+                if(playerScript.taskNum == 6)
+                {
+                    win = true;
+                    Debug.Log("YOU WIN YOU ARE DONE YAY");
+                }
 
                 playerScript.detachItems();
                 playerScript.cleanCam();
@@ -135,6 +144,13 @@ public class characterInfo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(win && !audio.isPlaying)
+        {
+            Debug.Log("THE END WOULD NOW BE LOADING");
+            //AVERY END THE GAME HERE
+           // SceneManager.LoadScene();
+        }
+
         if(playing && timer < 30)
         {
             timer++;

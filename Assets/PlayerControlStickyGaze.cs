@@ -102,7 +102,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
     List<myInfo> AllObjsWithInfo = new List<myInfo>();  //reference list of all the "MyInfo" scripts in the scene
 
     //Public Tasks
-    int taskNum = 1;
+    public int taskNum = 1;
 
    
 
@@ -334,11 +334,12 @@ public class PlayerControlStickyGaze : MonoBehaviour {
         //remove items from sticky gaze
         Rigidbody[] items = cam.GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody i in items) {
-            i.useGravity = true;
+            // i.useGravity = true;
+            i.useGravity = false;
             if (i.gameObject.GetComponent<myInfo>() != null) {
                 i.gameObject.GetComponent<myInfo>().grabbed = false;
                // i.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-                i.gameObject.GetComponent<Rigidbody>().useGravity = true;
+                i.gameObject.GetComponent<Rigidbody>().useGravity = false;//was true
             }
         }
     }
@@ -539,7 +540,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
             switch (taskNum) {
                 case 1: {
                         //find clean and dirty
-                        if (checkMatchingTags("clean", "dirty")) {
+                        if (checkMatchingTags("clean", "dirty") && MyObjects.Count <= 2) {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
                             Tinylytics.AnalyticsManager.LogCustomMetric("Puzzle 1 Solve Time (sec)", (puzzle1Timer / 60).ToString());
@@ -576,7 +577,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
                             //temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;
@@ -614,7 +615,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                     }
                 case 2: {
                         //find shocking and evil
-                        if (checkMatchingTags("shocking", "evil"))
+                        if (checkMatchingTags("shocking", "evil") && MyObjects.Count <= 2)
                         {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
@@ -654,7 +655,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
                             // temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;
@@ -690,7 +691,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                     }
                 case 3: {
                         //find comedic and dramatic
-                        if (checkMatchingTags("hot", "risky")) {
+                        if (checkMatchingTags("hot", "risky") && MyObjects.Count <= 2) {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
                             Tinylytics.AnalyticsManager.LogCustomMetric("Puzzle 3 Solve Time (sec)", (puzzle1Timer / 60).ToString());
@@ -729,8 +730,8 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
-                           // temp.GetComponent<Rigidbody>().isKinematic = false;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
+                            // temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;
                             temp.GetComponent<Rigidbody>().mass = 1f;
@@ -763,7 +764,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 case 4:
                     {
                         //find comedic and dramatic
-                        if (checkMatchingTags("basic", "acidic"))
+                        if (checkMatchingTags("basic", "acidic") && MyObjects.Count <= 2)
                         {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
@@ -801,7 +802,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
                             // temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;
@@ -838,7 +839,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                     {
                         
                         //find tasty and explosive
-                        if (checkMatchingTags("tasty", "explosive"))
+                        if (checkMatchingTags("tasty", "explosive") && MyObjects.Count <= 2)
                         {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
@@ -880,7 +881,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
                             //temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;
@@ -916,7 +917,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
                 case 6:
                     {
                         //find comedic and dramatic
-                        if (checkMatchingTags("funky", "medicinal"))
+                        if (checkMatchingTags("funky", "medicinal") && MyObjects.Count <= 2)
                         {
                             //success
                             Debug.Log("YOU COMBINED CORRECTLY");
@@ -954,7 +955,7 @@ public class PlayerControlStickyGaze : MonoBehaviour {
 
                             detachItems();
                             cleanCam();
-                            temp.GetComponent<Rigidbody>().useGravity = true;
+                            temp.GetComponent<Rigidbody>().useGravity = false;
                             // temp.GetComponent<Rigidbody>().isKinematic = false;
                             temp.GetComponent<Rigidbody>().freezeRotation = true;
                             temp.GetComponent<Rigidbody>().angularDrag = 0f;

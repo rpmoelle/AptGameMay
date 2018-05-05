@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/playscenetest.unity
+    guid: 639427e73aa62674491da3c5f251cfc6
+  - enabled: 1
     path: Assets/Cupid.unity
     guid: 11f6cb91d49a934429e95bf584026dc0

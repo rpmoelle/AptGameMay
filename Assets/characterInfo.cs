@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -148,7 +148,7 @@ public class characterInfo : MonoBehaviour
         {
             Debug.Log("THE END WOULD NOW BE LOADING");
             //AVERY END THE GAME HERE
-           // SceneManager.LoadScene();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if(playing && timer < 30)

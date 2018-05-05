@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cupid.unity
     guid: 11f6cb91d49a934429e95bf584026dc0
+  - enabled: 1
+    path: Assets/EndScreen.unity
+    guid: b4d4e85e0f2e96c4d8d87bf5baa8aab4
